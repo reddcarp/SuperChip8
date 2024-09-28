@@ -46,8 +46,10 @@ TARGET_LINK_LIBRARIES(${PROJECT_NAME} raylib)
 # cmake -DDEV_MODE=OFF .. => to disable it
 option(DEV_MODE "Build in development mode" ON)
 if(DEV_MODE)
+    set(CMAKE_BUILD_TYPE Debug) # To enable debugging symbols (gdb)
     ADD_COMPILE_DEFINITIONS(SOUND_FILE_PATH="${CMAKE_SOURCE_DIR}/resources")
 else()
+    set(CMAKE_BUILD_TYPE Release) # To enable optimizations
     ADD_COMPILE_DEFINITIONS(SOUND_FILE_PATH="${CMAKE_INSTALL_PREFIX}/share/SuperChip8/resources")
 endif()
 

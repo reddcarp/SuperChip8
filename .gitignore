@@ -6,3 +6,6 @@ build/
 
 # Visual Studio Code
 .vscode/
+
+# roms
+*.ch8
