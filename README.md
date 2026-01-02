@@ -1,59 +1,72 @@
-# SUPERCHIP-8
+<p align="center">
+  <img src="screenshots/Icon.png" width="200">
+</p>
 
-This repository is a cpp implementation of a SuperChip-8 emulator.
+<h1 align="center">SuperChip-8</h1>
+
+<p align="center">
+  <strong>A SuperChip-8 emulator written in cpp.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/language-cpp-orange.svg" alt="Language">
+  <img src="https://img.shields.io/badge/platform-SuperChip8-blue.svg" alt="Platform">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+</p>
+
+## Screenshots
+
+| [horseyJump.ch8](https://johnearnest.github.io/chip8Archive/play.html?p=horseyJump) | [RPS.ch8](https://johnearnest.github.io/chip8Archive/play.html?p=RPS) |
+| :---: | :---: |
+| <img src="screenshots/horseyJump.png" width="250"> | <img src="screenshots/RPS.png" width="250"> |
+
+| [sweetcopter.ch8](https://johnearnest.github.io/chip8Archive/play.html?p=sweetcopter) | [rockto.ch8](https://johnearnest.github.io/chip8Archive/play.html?p=rockto) |
+| :---: | :---: |
+| <img src="screenshots/sweetcopter.png" width="250"> | <img src="screenshots/rockto.png" width="250"> |
 
 ## Features
 
-- Runs SuperChip-8 games
-  - 64x32 resolution (LowRes)
-  - 128x64 resolution (HiRes)
-- Runs Chip-8 games
-- Resizable screen
-
-## Requirements
-
-- raylib
-
-## Compilation
-
-```bash
-git clone https://github.com/reddcarp/SuperChip8.git
-cd SuperChip8
-mkdir build && cd build
-cmake ..
-make
-```
-
-> **Note**:
-> By default, the project is compiled in development mode (with debug symbols).
-> To compile in release mode, follow the [Installation](#installation) instructions.
+- [x] SuperChip-8 game compatible
+- [x] Chip-8 game compatible
+- [x] LowRes game compatible (64x32)
+- [x] HiRes game compatible (128x64)
+- [x] Resizable window
 
 ## Usage
 
-Basic usage:
+Requirements:
 
-```bash
-./SuperChip8 -r <path_to_rom>
-```
+- raylib
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/reddcarp/SuperChip8.git
+    ```
+
+2. **Build binary**
+
+    ```bash
+    cd SuperChip8
+    mkdir build && cd build
+    cmake ..
+    make
+    ```
+
+3. **Run binary**
+
+    ```bash
+    ./SuperChip8 -r <path_to_rom>
+    ```
 
 options:
 
 - `-r <path_to_rom>`: Path to the ROM file
 - `-c <cpu_cycles>` : Number of CPU cycles per frame (default: 10)
 
-## Screenshots
-
-- LowRes games:
-
-[horseyJump.ch8](https://johnearnest.github.io/chip8Archive/play.html?p=horseyJump)  |  [RPS.ch8](https://johnearnest.github.io/chip8Archive/play.html?p=RPS)
-:-------------------------:|:-------------------------:
-![horseyJump.ch8](screenshots/horseyJump.png) |  ![RPS.ch8](screenshots/RPS.png)
-
-- HiRes games:
-
-[sweetcopter.ch8](https://johnearnest.github.io/chip8Archive/play.html?p=sweetcopter)  |  [rockto.ch8](https://johnearnest.github.io/chip8Archive/play.html?p=rockto)
-:-------------------------:|:-------------------------:
-![sweetcopter.ch8](screenshots/sweetcopter.png) | ![rockto.ch8](screenshots/rockto.png)
+> **Note**:
+> By default, the project is compiled in development mode (with debug symbols).
+> To compile in release mode, follow the [Installation](#installation) instructions.
 
 ## Installation
 
