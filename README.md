@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/language-cpp-orange.svg" alt="Language">
-  <img src="https://img.shields.io/badge/platform-SuperChip8-blue.svg" alt="Platform">
+  <img src="https://img.shields.io/badge/platform-SuperChip--8-blue.svg" alt="Platform">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
 </p>
 
