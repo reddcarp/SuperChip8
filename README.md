@@ -75,6 +75,10 @@ cmake -DDEV_MODE=OFF ..
 make && make install
 ```
 
+## Architecture
+
+![architecture](screenshots/SUPERCHIP8-cpp.drawio.png)
+
 ## Useful links
 
 Wikipedia:
